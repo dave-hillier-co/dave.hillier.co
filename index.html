@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dave Hillier</title>
+  <meta name="description" content="Dave Hillier writes open source software: code-health, a Claude Code plugin that finds where code is expensive to change, and other projects.">
+  <link rel="canonical" href="https://dave.hillier.co/">
+  <link rel="icon" href="code-health.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dave Hillier</h1>
+    <p>I write software and publish it as open source under <a href="https://github.com/dave-hillier-co">dave-hillier-co</a> on GitHub.</p>
+  </header>
+
+  <main>
+    <section class="featured-project" aria-labelledby="code-health-heading">
+      <img src="code-health.png" alt="" width="96" height="96">
+      <h2 id="code-health-heading">code-health</h2>
+      <p>A Claude Code plugin that finds where code is expensive to change, guides an agent through fixing it, and measures whether later changes got cheaper. It works from git history and source structure, runs locally, and sends nothing anywhere.</p>
+      <p>It is a suite of four tools, each a command line program with skills that tell Claude when to run it:</p>
+      <dl>
+        <dt>cochange</dt>
+        <dd>Where change effort concentrates, and which files change together.</dd>
+        <dt>complexity</dt>
+        <dd>Which functions are hard to understand, and where the complexity comes from.</dd>
+        <dt>structure</dt>
+        <dd>Which dependencies make change expensive.</dd>
+        <dt>locality</dt>
+        <dd>Which code lives far from the code that uses it.</dd>
+      </dl>
+      <p>Install it in Claude Code:</p>
+      <pre><code>/plugin marketplace add dave-hillier-co/code-health
+/plugin install code-health@code-health</code></pre>
+      <p><a href="https://github.com/dave-hillier-co/code-health">Source, documentation and licence on GitHub</a></p>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Other projects</h2>
+      <ul>
+        <li><a href="https://github.com/dave-hillier-co/thresh">thresh</a>: a TypeScript virtual actor model, inspired by Orleans and hosted on Kubernetes.</li>
+        <li><a href="https://github.com/dave-hillier-co/benedb">benedb</a>: a wire-compatible SpiceDB implementation in TypeScript, built on thresh.</li>
+        <li><a href="https://github.com/dave-hillier-co/spiceport">spiceport</a>: SpiceDB ported to .NET and Microsoft Orleans.</li>
+        <li><a href="https://github.com/dave-hillier-co/RakDotNet">RakDotNet</a>: a C# implementation of the RakNet protocol.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact</h2>
+    <address>
+      <a href="mailto:dave@hillier.co">dave@hillier.co</a>
+    </address>
+  </footer>
+</body>
+</html>
